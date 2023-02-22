@@ -1,12 +1,15 @@
-import React, {useCallback, useMemo, useState} from 'react';
+import React, {useCallback, useMemo, useState, Suspense} from 'react';
 import Block from "../body_block/Block";
 import {CategoryType, ProductCardProps, SelectedPage, SubcategoryType} from "../../types/componentsTypes";
 import categories from "../../mocks/mock.json";
-import {CatalogContainer, StyledCategory, StyledHeading} from "./styled";
+import {StyledCategory, StyledHeading} from "./styled";
 import ProductCard from "./product_card/ProductCard";
 import {ProductsContainer, StyledHeadingBlack} from "../helpers";
 import {Button} from "../../controls/button/Button";
-import ProductPage from "./product_page/ProductPage";
+import {Loader} from "../loader/Loader";
+
+const ProductPage = React.lazy(() => import("./product_page/ProductPage"));
+const CatalogContainer = React.lazy(() => import("./CatalogContainer"));
 
 const Catalog = (): JSX.Element => {
     /* STATE */
@@ -123,7 +126,9 @@ const Catalog = (): JSX.Element => {
     ]);
     return (
         <Block id="catalog" heading={heading}>
-            {page}
+            <Suspense fallback={<Loader/>}>
+                {page}
+            </Suspense>
         </Block>
     );
 };
