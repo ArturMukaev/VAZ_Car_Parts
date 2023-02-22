@@ -1,10 +1,15 @@
 import React from 'react';
 import ProductCard from "../products/product_card/ProductCard";
-import categories from "../../mocks/mock.json";
-import {ProductCardProps} from "../../types/componentsTypes";
+import {CategoryType, ProductCardProps} from "../../types/componentsTypes";
 import {ProductsContainer} from "../helpers";
 
 const SalesBlock = (): JSX.Element => {
+    const [categories, setCategories] = React.useState<CategoryType[]>([]);
+    React.useEffect(() => {
+        import("../../mocks/mock.json").then(data => {
+            setCategories(data.default);
+        });
+    },[]);
     // Получаем продукты, на которые сейчас скидка из мока
     let onSaleProducts: ProductCardProps[] = [];
     for (const category of categories) {

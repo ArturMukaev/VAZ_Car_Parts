@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, {keyframes} from 'styled-components';
 
 const rotate = keyframes`
@@ -11,12 +10,13 @@ const rotate = keyframes`
 `;
 
 export const Loader = styled.div`
-  display: inline-block;
+  display: grid;
   width: 80px;
   height: 80px;
+  align-self: center;
+  justify-self: center;
   &:after {
     content: " ";
-    display: block;
     width: 64px;
     height: 64px;
     margin: 8px;

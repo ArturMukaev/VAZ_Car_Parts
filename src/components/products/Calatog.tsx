@@ -1,7 +1,6 @@
 import React, {useCallback, useMemo, useState, Suspense} from 'react';
 import Block from "../body_block/Block";
 import {CategoryType, ProductCardProps, SelectedPage, SubcategoryType} from "../../types/componentsTypes";
-import categories from "../../mocks/mock.json";
 import {StyledCategory, StyledHeading} from "./styled";
 import ProductCard from "./product_card/ProductCard";
 import {ProductsContainer, StyledHeadingBlack} from "../helpers";
@@ -14,6 +13,7 @@ const CatalogContainer = React.lazy(() => import("./CatalogContainer"));
 const Catalog = (): JSX.Element => {
     /* STATE */
     const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Category);
+    const [categories, setCategories] = React.useState<CategoryType[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<CategoryType>();
     const [selectedSubcategory, setSelectedSubcategory] = useState<SubcategoryType>();
     const [selectedProduct, setSelectedProduct] = useState<ProductCardProps>();
@@ -52,6 +52,12 @@ const Catalog = (): JSX.Element => {
         }, [],
     );
 
+    /* EFFECT */
+    React.useEffect(() => {
+        import("../../mocks/mock.json").then(data => {
+            setCategories(data.default);
+        });
+    },[]);
 
     /* MEMO */
     const heading = useMemo((): React.ReactNode | string => {
@@ -122,7 +128,8 @@ const Catalog = (): JSX.Element => {
         setSelectedSubcategory,
         selectedSubcategory,
         setSelectedProduct,
-        selectedProduct
+        selectedProduct,
+        categories,
     ]);
     return (
         <Block id="catalog" heading={heading}>
