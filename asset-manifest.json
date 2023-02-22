@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/VAZ_Car_Parts/static/js/main.4dfdced7.js",
+    "main.js": "/VAZ_Car_Parts/static/js/main.c7a0595c.js",
+    "static/js/844.70ebeafa.chunk.js": "/VAZ_Car_Parts/static/js/844.70ebeafa.chunk.js",
     "static/js/328.e827e137.chunk.js": "/VAZ_Car_Parts/static/js/328.e827e137.chunk.js",
     "static/js/802.afda2e09.chunk.js": "/VAZ_Car_Parts/static/js/802.afda2e09.chunk.js",
     "static/js/593.d6ec92f2.chunk.js": "/VAZ_Car_Parts/static/js/593.d6ec92f2.chunk.js",
@@ -1078,10 +1079,10 @@
     "static/media/basket.svg": "/VAZ_Car_Parts/static/media/basket.41e509cf68ffa07c7feb952a64a0cbb7.svg",
     "static/media/burger.svg": "/VAZ_Car_Parts/static/media/burger.06cfcac9b506594951f099719d17c79c.svg",
     "static/media/cross.svg": "/VAZ_Car_Parts/static/media/cross.0d36f6bc8661c83ff4b090de47262c4d.svg",
-    "main.4dfdced7.js.map": "/VAZ_Car_Parts/static/js/main.4dfdced7.js.map",
+    "main.c7a0595c.js.map": "/VAZ_Car_Parts/static/js/main.c7a0595c.js.map",
     "802.afda2e09.chunk.js.map": "/VAZ_Car_Parts/static/js/802.afda2e09.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4dfdced7.js"
+    "static/js/main.c7a0595c.js"
   ]
 }
