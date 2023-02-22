@@ -1,6 +1,9 @@
 {
   "files": {
-    "main.js": "/VAZ_Car_Parts/static/js/main.a1b70d62.js",
+    "main.js": "/VAZ_Car_Parts/static/js/main.4dfdced7.js",
+    "static/js/328.e827e137.chunk.js": "/VAZ_Car_Parts/static/js/328.e827e137.chunk.js",
+    "static/js/802.afda2e09.chunk.js": "/VAZ_Car_Parts/static/js/802.afda2e09.chunk.js",
+    "static/js/593.d6ec92f2.chunk.js": "/VAZ_Car_Parts/static/js/593.d6ec92f2.chunk.js",
     "static/media/visa.png": "/VAZ_Car_Parts/static/media/visa.d72c49e3b308a59e44b9.png",
     "static/media/MasterCard.png": "/VAZ_Car_Parts/static/media/MasterCard.47f13eee0bbf38485347.png",
     "static/media/Mir.png": "/VAZ_Car_Parts/static/media/Mir.a75e1fc6702d78c4339f.png",
@@ -1075,9 +1078,10 @@
     "static/media/basket.svg": "/VAZ_Car_Parts/static/media/basket.41e509cf68ffa07c7feb952a64a0cbb7.svg",
     "static/media/burger.svg": "/VAZ_Car_Parts/static/media/burger.06cfcac9b506594951f099719d17c79c.svg",
     "static/media/cross.svg": "/VAZ_Car_Parts/static/media/cross.0d36f6bc8661c83ff4b090de47262c4d.svg",
-    "main.a1b70d62.js.map": "/VAZ_Car_Parts/static/js/main.a1b70d62.js.map"
+    "main.4dfdced7.js.map": "/VAZ_Car_Parts/static/js/main.4dfdced7.js.map",
+    "802.afda2e09.chunk.js.map": "/VAZ_Car_Parts/static/js/802.afda2e09.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a1b70d62.js"
+    "static/js/main.4dfdced7.js"
   ]
 }
