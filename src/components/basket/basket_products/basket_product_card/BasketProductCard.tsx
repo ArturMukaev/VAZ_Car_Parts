@@ -28,7 +28,7 @@ const BasketProductCard = (props: BasketItem): JSX.Element => {
 
     return (
         <StyledBasketCard>
-            <BasketProductImage src={require(`../../../../images/products/${name}.png`)} alt={name}/>
+            <BasketProductImage src={`https://raw.githubusercontent.com/ArturMukaev/VAZ_Car_Parts/main/src/images/products/${name}.png`} alt={name}/>
             <BasketProductInfo>
                 <BasketProductName>{picture}</BasketProductName>
                 <BasketProductPrice isSale={isSale}>{priceWithSale} руб.</BasketProductPrice>

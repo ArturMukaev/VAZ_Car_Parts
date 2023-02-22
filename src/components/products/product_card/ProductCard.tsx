@@ -23,7 +23,7 @@ const ProductCard = ({product, clickName}: ProductCardCatalogProps): JSX.Element
     return (
         <React.Suspense fallback={<Loader/>}>
             <StyledProductCard>
-                <ProductImage src={require(`../../../images/products/${name}.png`)} alt={name}/>
+                <ProductImage src={`https://raw.githubusercontent.com/ArturMukaev/VAZ_Car_Parts/main/src/images/products/${name}.png`} alt={name}/>
                 <ProductInfo>
                     {clickName
                         ? <ProductName clickable onClick={clickName}>{picture}</ProductName>

@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "brunch build -p",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
@@ -53,7 +53,6 @@
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",
     "@types/react-modal": "^3.13.1",
     "@types/styled-components": "^5.1.26",
-    "gh-pages": "^5.0.0",
-    "terser-brunch": "^4.1.0"
+    "gh-pages": "^5.0.0"
   }
 }
